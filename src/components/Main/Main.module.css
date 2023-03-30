@@ -1,0 +1,16 @@
+.mainBlock {
+    height: 100vh;
+    background: #ffd4f0;
+}
+
+.greetingText {
+    max-width: 450px;
+    background: aliceblue;
+}
+
+.photo {
+    width: 350px;
+    height: 450px;
+    background: aliceblue;
+}
+

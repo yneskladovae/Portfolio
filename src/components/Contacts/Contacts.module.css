@@ -1,0 +1,9 @@
+.contactsBlock {
+    height: 100vh;
+    background: #ee934b;
+}
+
+.contactsContainer {
+    flex-direction: column;
+    justify-content: center;
+}
