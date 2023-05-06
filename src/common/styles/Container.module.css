@@ -1,10 +1,11 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    max-width: 1280px;
     height: 100%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    border: 1px solid;
+    /*border: 1px solid;*/
 }

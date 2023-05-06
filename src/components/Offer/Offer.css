@@ -1,0 +1,33 @@
+.offer {
+    text-align: center;
+    padding: 0 0 70px 0;}
+
+.offer h2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+}
+
+.offer p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.offer button {
+    margin-right: 8px;
+    margin-bottom: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #c6ff00;
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+    min-width: 100px;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 100px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+

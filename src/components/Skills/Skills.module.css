@@ -1,10 +1,11 @@
 .skillsBlock {
     min-height: 100vh;
-    background: #a4d979;
+    display: flex;
+    align-items: center;
 }
 
 .skillsContainer {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 }
 
@@ -14,15 +15,32 @@
 
 .skills {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
     width: 100%;
+}
+
+.skillsBlockContainer {
+    display: flex;
+    align-items: center;
+}
+
+.skillsBlockImg {
+    display: contents;
+}
+
+.skillsBlockImg img {
+    width: 45%;
+}
+.skillsBlockSkills {
+
 }
 
 @media (max-width: 800px) {
     .skillsContainer {
         flex-direction: inherit;
     }
+
     .skills {
         justify-content: center;
     }

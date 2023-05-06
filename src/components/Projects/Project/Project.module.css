@@ -11,6 +11,12 @@
     background-size: cover;
 }
 
+.imageContainer a {
+    background: #161625d6;
+    padding: 10px 30px;
+    color: white;
+}
+
 .project {
     width: 380px;
     position: relative;

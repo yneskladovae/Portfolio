@@ -17,7 +17,7 @@ export const Project: React.FC<ProjectPropsType> = ({title, description, link, s
                 <a href={link} target={"_blank"}>View</a>
             </div>
             <div className={s.projectInfo}>
-                <h3>{title}</h3>
+                <h2>{title}</h2>
                 <p>{description}</p>
             </div>
         </div>

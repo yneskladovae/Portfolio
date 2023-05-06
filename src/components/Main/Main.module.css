@@ -1,16 +1,32 @@
 .mainBlock {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    background: #ffd4f0;
+    background: #ffd4f0 url('/src/assets/backgrounds/bg-dark.svg') 50% 50%;
+    background-size: cover;
+    color: #fff;
+    /*overflow: hidden;*/
+
 }
 
 .greetingText {
     max-width: 450px;
-    background: aliceblue;
 }
 
 .photo {
-    width: 350px;
-    height: 450px;
-    background: aliceblue;
+    max-width: 90%;
 }
 
+.photo-container {
+    /*display: contents;*/
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.highlighted{
+    color: red;
+}
