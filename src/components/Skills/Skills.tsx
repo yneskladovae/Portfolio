@@ -16,7 +16,6 @@ import sassIcon from './svg/sass.svg'
 import tsIcon from './svg/typescript.svg'
 import githubDots from './svg/github-dots.svg'
 
-
 export const Skills = () => {
     return (
         <div className={s.skillsBlock}>

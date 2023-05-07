@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Skill.module.css'
 
-
 type SkillPropsType = {
     skillTitle: string
     path: string
