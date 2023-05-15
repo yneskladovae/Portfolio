@@ -2,6 +2,7 @@ import React from 'react';
 import s from './Projects.module.css'
 import StyleContainer from '../../common/styles/Container.module.css'
 import {Project} from "./Project/Project";
+import {MyProjectsData} from '../../data/projects'
 
 export const Projects = () => {
     return (
@@ -17,34 +18,14 @@ export const Projects = () => {
                 <div className={`${StyleContainer.container} ${s.projectsContainer}`}>
                     <h2 className={s.title}>Projects</h2>
                     <div className={s.projects}>
-                        <Project title={"Social Network"}
-                                 style={{backgroundImage: `url("https://matumba125.github.io/my-cv/static/media/socialNetwork.dc5b8f8c.jpg")`}}
-                                 link={""}
-                                 description={"Social Network is an online platform that allows people to create an account and interact with other people on the website. Users can build there virtual world on the site, make friends and share their thoughts and ideas by writing a post."}/>
-
-                        <Project title={"ToDo List"}
-                                 style={{backgroundImage: `url("https://matumba125.github.io/my-cv/static/media/todolistPreview.7d06a371.png")`}}
-                                 link={""}
-                                 description={"ToDo List is an online platform for organizing your personal or work tasks which can help you to increase the productivity, prioritise tasks, manage tasks effectively and improve time management."}/>
-
-                        <Project title={"Counter"}
-                                 style={{backgroundImage: `url("https://matumba125.github.io/my-cv/static/media/cardsApp.7f400927.jpg")`}}
-                                 link={""}
-                                 description={"Counter is a test project which (to tell the truth) doesn't have a lot of practical use. It allows to do some settings which influence on the way how the counter works."}/>
-                        <Project title={"Social Network"}
-                                 style={{backgroundImage: `url("https://matumba125.github.io/my-cv/static/media/socialNetwork.dc5b8f8c.jpg")`}}
-                                 link={""}
-                                 description={"Social Network is an online platform that allows people to create an account and interact with other people on the website. Users can build there virtual world on the site, make friends and share their thoughts and ideas by writing a post."}/>
-
-                        <Project title={"ToDo List"}
-                                 style={{backgroundImage: `url("https://matumba125.github.io/my-cv/static/media/todolistPreview.7d06a371.png")`}}
-                                 link={""}
-                                 description={"ToDo List is an online platform for organizing your personal or work tasks which can help you to increase the productivity, prioritise tasks, manage tasks effectively and improve time management."}/>
-
-                        <Project title={"Counter"}
-                                 style={{backgroundImage: `url("https://matumba125.github.io/my-cv/static/media/cardsApp.7f400927.jpg")`}}
-                                 link={""}
-                                 description={"Counter is a test project which (to tell the truth) doesn't have a lot of practical use. It allows to do some settings which influence on the way how the counter works."}/>
+                        {MyProjectsData.map(project => {
+                            return <Project
+                                title={project.title}
+                                description={project.description}
+                                link={project.link}
+                                style={{backgroundImage: `url(${project.backgroundImage})`}}
+                            />
+                        })}
                     </div>
                 </div>
             </div>

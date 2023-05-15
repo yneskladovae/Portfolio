@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Main.module.css'
 import StyleContainer from '../../common/styles/Container.module.css'
-import logo from './programmer2.svg';
+import {programmer} from "../../utils/icons";
 
 export const Main = () => {
     return (
@@ -16,7 +16,7 @@ export const Main = () => {
                     </p>
                 </div>
                 <div className={s['photo-container']}>
-                    <img className={s.photo} src={logo} alt="Programmer"/>
+                    <img className={s.photo} src={programmer} alt="Programmer"/>
                 </div>
             </div>
         </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 import s from './Contacts.module.css'
 import StyleContainer from '../../common/styles/Container.module.css'
-import separator from './footer-wave-dark.svg'
-import message from './message.svg'
+import {message, footerWave} from "../../utils/icons";
+
 
 export const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
-            <img className={s.separatorContacts} src={separator} alt="Separator for contacts"/>
+            <img className={s.separatorContacts} src={footerWave} alt="Separator for contacts"/>
             <div className={`${StyleContainer.container} ${s.contactsContainer}`}>
                 <h2 className={s.title}>Contacts</h2>
                 <div className={s.contactsItems}>
