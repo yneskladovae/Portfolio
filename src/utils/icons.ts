@@ -20,7 +20,11 @@ import social from '../assets/images/socialNetwork.jpg'
 import todolist from '../assets/images/todolist.png'
 // footer image
 import message from '../assets/svg/message.svg'
-import footerWave from '../assets/svg/footer-wave-dark.svg'
+// import footerWave from '../assets/svg/footer-wave.svg'
+// section separator img
+import sectionSeparatorWave from '../assets/svg/bg-wave.svg'
+import footerWave from '../assets/svg/footer-wave.svg'
+
 
 export {
     programmer,
@@ -41,5 +45,6 @@ export {
     social,
     todolist,
     message,
-    footerWave
+    footerWave,
+    sectionSeparatorWave
 };

@@ -1,9 +1,4 @@
-/*.skillsBlock {*/
-/*    height: 100vh;*/
-/*    background: #a4d979;*/
-/*}*/
-
-.skill {
+.skill-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,15 +9,12 @@
     /*margin-top: 50px;*/
 }
 
-.icon {
+.skill__block__icon {
     width: 80px;
 }
 
-
-
-
 @media (max-width: 800px) {
-    .skill {
+    .skill-container {
         margin-top: 10px;
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Project.module.css'
+import './Project.css'
 
 type ProjectPropsType = {
     title: string
@@ -12,13 +12,13 @@ type ProjectPropsType = {
 
 export const Project: React.FC<ProjectPropsType> = ({title, description, link, style}) => {
     return (
-        <div className={s.project}>
-            <div className={s.imageContainer} style={style}>
-                <a href={link} target={"_blank"}>View</a>
+        <div className={'project'}>
+            <div className={'project__bg-container'} style={style}>
+                <a className={'project__bg-container__link'} href={link} target={"_blank"}>View</a>
             </div>
-            <div className={s.projectInfo}>
-                <h2>{title}</h2>
-                <p>{description}</p>
+            <div className={'project__info'}>
+                <h2 className={'project__info__title'}>{title}</h2>
+                <p className={'project__info__description'}>{description}</p>
             </div>
         </div>
     );

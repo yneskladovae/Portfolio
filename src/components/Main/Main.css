@@ -1,4 +1,4 @@
-.mainBlock {
+.main-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -8,15 +8,15 @@
     /*overflow: hidden;*/
 }
 
-.greetingText {
+.main-container__greeting {
     max-width: 450px;
 }
 
-.photo {
-    max-width: 90%;
+.main-container__greeting-highlighted {
+    color: red;
 }
 
-.photo-container {
+.main-container__photo {
     /*display: contents;*/
     flex-grow: 0;
     max-width: 50%;
@@ -26,6 +26,6 @@
     justify-content: center;
 }
 
-.highlighted{
-    color: red;
+.main-container__photo__img {
+    max-width: 90%;
 }

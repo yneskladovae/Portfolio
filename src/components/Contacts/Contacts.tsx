@@ -1,40 +1,40 @@
 import React from 'react';
-import s from './Contacts.module.css'
+import './Contacts.css'
 import StyleContainer from '../../common/styles/Container.module.css'
 import {message, footerWave} from "../../utils/icons";
 
 
 export const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
-            <img className={s.separatorContacts} src={footerWave} alt="Separator for contacts"/>
-            <div className={`${StyleContainer.container} ${s.contactsContainer}`}>
-                <h2 className={s.title}>Contacts</h2>
-                <div className={s.contactsItems}>
-                    <div className={s.contactsData}>
-                        <h2>Connect with me</h2>
+        <div className={'contacts'}>
+            <img className={'contacts__separator'} src={footerWave} alt="Separator for contacts"/>
+            <div className={`${StyleContainer.container} contacts__container`}>
+                {/*<h2 className={'contacts__title'}>Contacts</h2>*/}
+                <div className={'contacts__items'}>
+                    <div className={'contacts__info'}>
+                        <h2 className={'contacts__info__title'}>Connect with me</h2>
                         <ul>
                             <li>GitHub</li>
                             <li>LinkedIn</li>
                             <li>denispolinosik@gmail.com</li>
                         </ul>
                     </div>
-                    <img className={s.contactsImg} src={message} alt="message picture"/>
-                    <div className={s.form}>
-                        <h2>Contact me</h2>
+                    <img className={'contacts__img'} src={message} alt="message picture"/>
+                    <div className={'contacts__form'}>
+                        <h2 className={'contacts__form__title'}>Contact me</h2>
                         <form>
-                            <div className={s.contactItems}>
-                                <div className={s.inputField}>
+                            <div className={'contacts__form__inputs'}>
+                                <div className={'contacts__form__inputs-name'}>
                                     <input placeholder="Name" type="text"/>
                                 </div>
-                                <div className={s.inputField}>
+                                <div className={'contacts__form__inputs-email'}>
                                     <input placeholder="Email" type="text"/>
                                 </div>
                             </div>
-                            <div className={s.textarea}>
+                            <div className={'contacts__form__textarea'}>
                                 <textarea placeholder="Message"></textarea>
                             </div>
-                            <div className={s.sendMessage}>
+                            <div className={'contacts__form__btn'}>
                                 <button>Send Message</button>
                             </div>
                         </form>

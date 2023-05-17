@@ -1,4 +1,9 @@
-.imageContainer {
+.project {
+    width: 380px;
+    position: relative;
+}
+
+.project__bg-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,17 +16,12 @@
     background-size: cover;
 }
 
-.imageContainer a {
+.project__bg-container a {
     background: #161625d6;
     padding: 10px 30px;
     color: white;
 }
 
-.project {
-    width: 380px;
-    position: relative;
-}
-
-.projectInfo {
+.project__info {
     text-align: center;
 }

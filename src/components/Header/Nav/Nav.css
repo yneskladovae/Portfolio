@@ -1,0 +1,28 @@
+.nav-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   /*padding-left: 24px;*/
+   /*padding-right: 24px;*/
+   min-height: 64px;
+}
+
+.nav-container__nav a {
+   color: #fafafa;
+   margin-right: 32px;
+   padding: 6px 8px;
+}
+
+.nav-container__nav :last-child {
+   margin-right: 0;
+}
+
+@media (max-width: 540px) {
+   .nav-container  {
+      justify-content: center;
+   }
+   .nav-container__logo span {
+      display: none;
+   }
+}

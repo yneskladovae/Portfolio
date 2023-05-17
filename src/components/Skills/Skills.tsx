@@ -1,22 +1,23 @@
 import React from 'react';
-import s from './Skills.module.css'
+import './Skills.css'
 import StyleContainer from '../../common/styles/Container.module.css'
 import {Skill} from "./Skill/Skill";
 import {MySkillsData} from '../../data/skills'
 import {githubDots} from "../../utils/icons";
+
 export const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
-            <div className={`${StyleContainer.container} ${s.skillsContainer}`}>
-                <div className={s.skillsBlockContainer}>
-                    <div className={s.skillsBlockImg}>
+        <div className={'skills'}>
+            <div className={`${StyleContainer.container} skills__style-container`}>
+                <div className={'skills__container'}>
+                    <div className={'skills__container__photo'}>
                         <img src={githubDots} alt="Programmer"/>
                     </div>
-                    <div className={s.skillsBlockSkills}>
-                        <h2 className={s.title}>Skills</h2>
-                        <div className={s.skills}>
+                    <div className={'skills__container__skills-items'}>
+                        <h2 className={'skills__container__skills-items__title'}>Skills</h2>
+                        <div className={'skills__container__skills-items__skills'}>
                             {MySkillsData.map(skill => {
-                                return <Skill skillTitle={skill.title} path={skill.path} alt={skill.alt}/>
+                                return <Skill key={skill.title} skillTitle={skill.title} path={skill.path} alt={skill.alt}/>
                             })}
                         </div>
                     </div>

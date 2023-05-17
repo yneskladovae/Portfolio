@@ -5,7 +5,6 @@ import {Main} from "./components/Main/Main";
 import {Skills} from "./components/Skills/Skills";
 import {Projects} from "./components/Projects/Projects";
 import {Contacts} from "./components/Contacts/Contacts";
-import {SectionSeparator} from "./common/components/SectionSeparator";
 import {Offer} from "./components/Offer/Offer";
 
 function App() {
@@ -14,9 +13,7 @@ function App() {
             <Header/>
             <Main/>
             <Skills/>
-            {/*<SectionSeparator/>*/}
             <Projects/>
-            {/*<SectionSeparator/>*/}
             <Offer/>
             <Contacts/>
         </div>
