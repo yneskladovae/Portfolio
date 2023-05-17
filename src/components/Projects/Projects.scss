@@ -26,14 +26,16 @@
 }
 
 @media (max-width: 540px) {
-  flex-direction: inherit;
-}
-.projects__items__projects {
-  justify-content: center;
-}
-.separatorWaveTop {
-  margin-top: 0;
-}
-.separatorWaveBottom {
-  margin-bottom: 0;
+  .projects__container {
+    flex-direction: inherit;
+  }
+  .projects__items__projects {
+    justify-content: center;
+  }
+  .separatorWaveTop {
+    margin-top: 0;
+  }
+  .separatorWaveBottom {
+    margin-bottom: 0;
+  }
 }

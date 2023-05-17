@@ -30,3 +30,10 @@
 .main-container__photo__img {
     max-width: 90%;
 }
+
+@media (max-width: 540px) {
+    .main-container__photo {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
