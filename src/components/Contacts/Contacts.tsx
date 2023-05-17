@@ -16,7 +16,7 @@ export const Contacts = () => {
                         <ul>
                             <li>GitHub</li>
                             <li>LinkedIn</li>
-                            <li>denispolinosik@gmail.com</li>
+                            <li>denispolunosik@gmail.com</li>
                         </ul>
                     </div>
                     <img className={'contacts__img'} src={message} alt="message picture"/>
