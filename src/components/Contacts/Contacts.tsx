@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contacts.css'
+import './Contacts.scss'
 import StyleContainer from '../../common/styles/Container.module.css'
 import {message, footerWave} from "../../utils/icons";
 

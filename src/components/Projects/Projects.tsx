@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css'
+import './Projects.scss'
 import StyleContainer from '../../common/styles/Container.module.css'
 import {Project} from "./Project/Project";
 import {MyProjectsData} from '../../data/projects'

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Offer.css'
+import './Offer.scss'
 
 export const Offer = () => {
     return (

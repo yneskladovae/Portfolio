@@ -1,5 +1,5 @@
 import React from 'react';
-import './Main.css'
+import './Main.scss'
 import StyleContainer from '../../common/styles/Container.module.css'
 import {programmer} from "../../utils/icons";
 
