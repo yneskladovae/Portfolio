@@ -1,0 +1,29 @@
+.offerBlcok {
+  text-align: center;
+
+  .description {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 60px;
+    margin: 20px;
+  }
+
+  .btnOffer {
+    color: black;
+    background-color: #c6ff00;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.75;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    min-width: 75px;
+    box-sizing: border-box;
+  }
+}

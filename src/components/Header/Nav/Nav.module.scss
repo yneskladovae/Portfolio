@@ -1,0 +1,34 @@
+.navContainer {
+  a {
+    color: #fafafa;
+    margin-right: 32px;
+    padding: 6px 8px;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  :last-child {
+    margin-right: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .navContainer {
+    .hamburger {
+      display: block;
+    }
+
+    .navItems {
+      display: none;
+    }
+  }
+}
+
+// 767/8

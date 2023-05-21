@@ -1,5 +1,5 @@
 import React from 'react';
-import './Skill.scss'
+import s from './Skill.module.scss'
 
 type SkillPropsType = {
     skillTitle: string
@@ -9,10 +9,10 @@ type SkillPropsType = {
 
 export const Skill: React.FC<SkillPropsType> = ({skillTitle, path, alt}) => {
     return (
-        <div className={'skill-container'}>
-            <div className={'skill__block'}>
+        <div className={s.skillBlock}>
+            <div className={s.skillWrap}>
                 <h3 className={'skill__block__title'}>{skillTitle}</h3>
-                <img className={'skill__block__icon'} src={path} alt={alt}/>
+                <img className={s.skillIcon} src={path} alt={alt}/>
             </div>
         </div>
     );

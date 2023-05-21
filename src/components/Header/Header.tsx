@@ -1,19 +1,15 @@
 import React from 'react';
-import './Header.scss'
+import s from './Header.module.scss'
+import {Nav} from "./Nav/Nav";
 
 export const Header = () => {
     return (
-        <div className={'header'}>
-            <div className={'nav-container'}>
-                <div className={'nav-container__logo'}>
+        <div className={s.header}>
+            <div className={s.navBlock}>
+                <div className={s.navLogo}>
                     <span>{`< Denis Polunosik />`}</span>
                 </div>
-                <nav className={'nav-container__nav'}>
-                    <a className={'nav-container__nav__link'} href="#">Main</a>
-                    <a className={'nav-container__nav__link'} href="#">Skills</a>
-                    <a className={'nav-container__nav__link'} href="#">Projects</a>
-                    <a className={'nav-container__nav__link'} href="#">Contacts</a>
-                </nav>
+                <Nav/>
             </div>
         </div>
     );

@@ -1,0 +1,86 @@
+.mainBlcok {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #ffd4f0 url(../../assets/svg/bg-dark.svg) 50% 50%;
+  background-size: cover;
+  color: #fff;
+}
+
+.mainGreetingContainer {
+  max-width: 450px;
+
+  p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .greetingHighlighted {
+    color: red;
+  }
+}
+
+.socialLinks {
+  .socialItems {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    .iconGithub, .iconLinkedIn {
+      max-width: 53px;
+      padding-right: 20px;
+    }
+    .iconEmail {
+      max-width: 43px;
+    }
+  }
+}
+
+.btnsWrap {
+  margin-top: 15px;
+
+  a {
+    display: contents;
+
+    .btnContacts {
+      color: rgba(0, 0, 0, 0.87);
+      background-color: #c6ff00;
+      margin-right: 15px;
+    }
+
+    .btnProjects {
+      color: #c6ff00;
+      border: 1px solid rgba(198, 255, 0, 0.5);
+    }
+  }
+}
+
+.greetingPhoto {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.greetingPhotoImg {
+  max-width: 90%;
+}
+
+@media (max-width: 540px) {
+  .greetingPhoto {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 999px) {
+  .btnsWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mainGreetingContainer{
+    max-width: 100%;
+  }
+}

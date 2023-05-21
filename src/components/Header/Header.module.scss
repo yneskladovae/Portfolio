@@ -12,33 +12,29 @@
   z-index: 2;
 }
 
-.nav-container {
+.navBlock {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   min-height: 64px;
-}
 
-.nav-container__nav {
-  a {
-    color: #fafafa;
-    margin-right: 32px;
-    padding: 6px 8px;
-  }
-
-  :last-child {
-    margin-right: 0;
+  .navLogo {
+    span {
+      font-weight: bold;
+      font-size: 15px;
+    }
   }
 }
+
 
 @media (max-width: 576px) {
-  .nav-container {
-    justify-content: center;
-  }
-  .nav-container__logo {
-    display: none;
-  }
+  //.navBlock {
+  //  justify-content: center;
+  //}
+  //.navLogo {
+  //  display: none;
+  //}
 }
 
 // 767/8

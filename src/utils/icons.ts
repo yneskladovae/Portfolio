@@ -1,5 +1,10 @@
 // header image
 import programmer from '../assets/svg/programmer.svg'
+import hamburgerIcon from '../assets/svg/hamburger.svg'
+// main icons
+import linkedInIcon from '../assets/svg/linkedIn.svg'
+import emailIcon from '../assets/svg/email.svg'
+import gitHubIcon from '../assets/svg/githubIcon.svg'
 // skills icons
 import reactIcon from '../assets/svg/react-js-icon.svg'
 import bashIcon from '../assets/svg/bash.svg'
@@ -20,7 +25,7 @@ import social from '../assets/images/socialNetwork.jpg'
 import todolist from '../assets/images/todolist.png'
 // footer image
 import message from '../assets/svg/message.svg'
-// import footerWave from '../assets/svg/footer-wave.svg'
+
 // section separator img
 import sectionSeparatorWave from '../assets/svg/bg-wave.svg'
 import footerWave from '../assets/svg/footer-wave.svg'
@@ -46,5 +51,9 @@ export {
     todolist,
     message,
     footerWave,
-    sectionSeparatorWave
+    sectionSeparatorWave,
+    linkedInIcon,
+    emailIcon,
+    gitHubIcon,
+    hamburgerIcon
 };

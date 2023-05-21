@@ -1,20 +1,20 @@
-.skills {
+.skillsBlcok {
   min-height: 100vh;
   display: flex;
   align-items: center;
 }
 
-.skills__style-container {
+.skillsContainer {
   flex-direction: row;
   justify-content: center;
 }
 
-.skills__container {
+.skillsWrap {
   display: flex;
   align-items: center;
 }
 
-.skills__container__photo {
+.skillsPhoto {
   display: contents;
 
   img {
@@ -22,7 +22,7 @@
   }
 }
 
-.skills__container__skills-items__skills {
+.skills {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -30,13 +30,13 @@
 }
 
 @media (max-width: 540px) {
-  .skills__style-container {
+  .skillsContainer {
     flex-direction: inherit;
   }
-  .skills__container__skills-items__skills {
+  .skills {
     justify-content: space-between;
   }
-  .skills__container__photo {
+  .skillsPhoto {
     display: none;
   }
 }

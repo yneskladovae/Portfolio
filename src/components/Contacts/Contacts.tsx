@@ -1,27 +1,45 @@
 import React from 'react';
-import './Contacts.scss'
+import s from './Contacts.module.scss'
 import StyleContainer from '../../common/styles/Container.module.css'
-import {message, footerWave} from "../../utils/icons";
+import {message, footerWave, gitHubIcon, linkedInIcon, emailIcon} from "../../utils/icons";
 
 
 export const Contacts = () => {
     return (
-        <div className={'contacts'}>
-            <img className={'contacts__separator'} src={footerWave} alt="Separator for contacts"/>
-            <div className={`${StyleContainer.container} contacts__container`}>
-                {/*<h2 className={'contacts__title'}>Contacts</h2>*/}
-                <div className={'contacts__items'}>
-                    <div className={'contacts__info'}>
-                        <h2 className={'contacts__info__title'}>Connect with me</h2>
-                        <ul>
-                            <li>GitHub</li>
-                            <li>LinkedIn</li>
-                            <li>denispolunosik@gmail.com</li>
-                        </ul>
+        <div className={s.contactsBlock}>
+            <img className={s.contactsSeparator} src={footerWave} alt="Separator for contacts"/>
+            <div className={`${StyleContainer.container} \`${s.contactsContainer}`}>
+                <div className={s.contactsWrap}>
+                    <div className={s.info}>
+                        <h2 className={s.title}>Connect with me</h2>
+                        <div className={s.infoWrap}>
+                            <ul className={s.links}>
+                                <li>
+                                    <a href="">
+                                        <img src={gitHubIcon} alt=""/>
+                                        GitHub
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src={linkedInIcon} alt=""/>
+                                        LinkedIn
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src={emailIcon} alt=""/>
+                                        denispolunosik
+                                    </a>
+                                </li>
+                            </ul>
+                            <img className={s.contactsImg} src={message} alt="message picture"/>
+                        </div>
                     </div>
-                    <img className={'contacts__img'} src={message} alt="message picture"/>
-                    <div className={'contacts__form'}>
-                        <h2 className={'contacts__form__title'}>Contact me</h2>
+                    {/*<img className={s.contactsImg} src={message} alt="message picture"/>*/}
+                    <div className={s.contactForm}>
+                        <h2 className={s.formTitle}>Contact me</h2>
                         <form>
                             <div className={'contacts__form__inputs'}>
                                 <div className={'contacts__form__inputs-name'}>
@@ -34,8 +52,8 @@ export const Contacts = () => {
                             <div className={'contacts__form__textarea'}>
                                 <textarea placeholder="Message"></textarea>
                             </div>
-                            <div className={'contacts__form__btn'}>
-                                <button>Send Message</button>
+                            <div>
+                                <button className={s.btnForm}>Send Message</button>
                             </div>
                         </form>
                     </div>
