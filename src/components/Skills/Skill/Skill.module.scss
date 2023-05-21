@@ -11,24 +11,26 @@
   width: 80px;
 }
 
-//@media (max-width: 686px) {
-//  .skillBlock {
-//    min-width: 100px;
-//    flex: 0 1 33%;
-//  }
-//}
-
 @media (max-width: 1030px) {
   .skillBlock {
     min-width: 100px;
     flex: 0 1 33%;
   }
-
 }
 
-@media (max-width: 607px) {
+//@media (max-width: 607px) {
+//  .skillBlock {
+//    min-width: 75px;
+//    flex: 0 1 33%;
+//  }
+//}
+
+@media (max-width: 767px) {
   .skillBlock {
-    min-width: 75px;
-    flex: 0 1 33%;
+    min-width: 85px;
+    flex: 0;
+  }
+  .skillIcon {
+    width: 75px;
   }
 }
