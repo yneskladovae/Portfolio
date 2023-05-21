@@ -13,10 +13,26 @@
     margin-right: 0;
   }
 
-  .hamburger {
-    display: none;
-  }
 }
+.hamburger {
+  display: none;
+}
+
+//s.open {
+//  display: none;
+//}
+//
+//.navItems {
+//  /* Стили для закрытого меню */
+//  max-height: 0;
+//  overflow: hidden;
+//  transition: max-height 0.3s ease-in-out;
+//}
+//
+//.navItems.open {
+//  /* Стили для открытого меню */
+//  max-height: 500px; /* Нужная высота меню */
+//}
 
 
 @media (max-width: 767px) {
