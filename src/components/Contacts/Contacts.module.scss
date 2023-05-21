@@ -1,8 +1,9 @@
 .contactsBlock {
   background: #091c34;
+  padding-bottom: 30px;
 
   h2 {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 400;
     line-height: 1.167;
   }
@@ -107,6 +108,9 @@ textarea {
 @media (max-width: 767px) {
   .contactsImg {
     display: none;
+  }
+  .contactsBlock h2 {
+    font-size: 40px;
   }
   .contactForm {
     width: 100%;
