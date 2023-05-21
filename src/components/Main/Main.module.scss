@@ -30,6 +30,7 @@
       max-width: 53px;
       padding-right: 20px;
     }
+
     .iconEmail {
       max-width: 43px;
     }
@@ -80,11 +81,16 @@
     display: flex;
     justify-content: space-between;
   }
-  .mainGreetingContainer{
+  .greetingPhoto {
+    margin-top: 20px;
+    max-width: 80%;
+    flex-basis: 80%;
+  }
+  .mainGreetingContainer {
     max-width: 100%;
   }
   .mainBlcok {
-    padding: 30px 0px;
+    padding: 25px 0px 15px 0px;
     height: max-content;
   }
 }
