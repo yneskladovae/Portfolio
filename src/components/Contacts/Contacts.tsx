@@ -6,7 +6,7 @@ import {message, footerWave, gitHubIcon, linkedInIcon, emailIcon} from "../../ut
 
 export const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div id='contacts' className={s.contactsBlock}>
             <img className={s.contactsSeparator} src={footerWave} alt="Separator for contacts"/>
             <div className={`${StyleContainer.container} \`${s.contactsContainer}`}>
                 <div className={s.contactsWrap}>

@@ -8,7 +8,7 @@ import {CustomHeader} from "../../common/components/CustomHeader/CustomHeader";
 
 export const Skills = () => {
     return (
-        <div className={s.skillsBlcok}>
+        <div id='skills' className={s.skillsBlcok}>
             <div className={`${StyleContainer.container} ${s.skillsContainer}`}>
                 <CustomHeader header={'Skills'} subHeader={'My skills'}/>
                 <div className={s.skillsWrap}>

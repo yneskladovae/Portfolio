@@ -7,7 +7,7 @@ import BtnsMain from '../../common/styles/BtnsMain.module.css';
 
 export const Main = () => {
     return (
-        <div className={s.mainBlcok}>
+        <div id='main' className={s.mainBlcok}>
             <div className={StyleContainer.container}>
                 {/*<div className={`${StyleContainer.container } ${s.mainContainer}`}>*/}
                 <div className={s.mainGreetingContainer}>

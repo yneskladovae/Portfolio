@@ -1,10 +1,11 @@
 import React from 'react';
 import s from './Footer.module.css'
 import StyleContainer from "../../common/styles/Container.module.css";
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
-        <div className={s.footer}>
+        <div id='footer' className={s.footer}>
             <div className={StyleContainer.container}>
                 <div className={s.footerContainer}>
                     <div className={s.contacts}>

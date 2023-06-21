@@ -7,30 +7,32 @@ import {sectionSeparatorWave,} from "../../utils/icons";
 import {CustomHeader} from "../../common/components/CustomHeader/CustomHeader";
 
 export const Projects = () => {
-    return (
-        <div className={s.projectsBlock}>
-            <div className={s.separatorWaveTop}>
-                <img src={sectionSeparatorWave} alt="Section separator"/>
-            </div>
-            <div className={s.projectsWrap}>
-                <div className={`${StyleContainer.container} ${s.projectsContainer}`}>
-                    <CustomHeader header={'Projects'} subHeader={'Featured Projects'}/>
-                    <div className={s.projectsItems}>
-                        {MyProjectsData.map(project => {
-                            return <Project
-                                key={project.title}
-                                title={project.title}
-                                description={project.description}
-                                link={project.link}
-                                style={{backgroundImage: `url(${project.backgroundImage})`}}
-                            />
-                        })}
-                    </div>
-                </div>
-            </div>
-            <div className={s.separatorWaveBottom}>
-                <img src={sectionSeparatorWave} alt="Section separator" style={{transform: 'rotate(0.5turn)'}}/>
-            </div>
+  return (
+    <div className={s.projectsBlock}>
+      <div className={s.separatorWaveTop}>
+        <img src={sectionSeparatorWave} alt="Section separator"/>
+      </div>
+      <div className={s.projectsWrap}>
+        <div id='projects' style={{paddingTop: '50px'}}>
         </div>
-    );
+        <div className={`${StyleContainer.container} ${s.projectsContainer}`}>
+          <CustomHeader header={'Projects'} subHeader={'Featured Projects'}/>
+          <div className={s.projectsItems}>
+            {MyProjectsData.map(project => {
+              return <Project
+                key={project.title}
+                title={project.title}
+                description={project.description}
+                link={project.link}
+                style={{backgroundImage: `url(${project.backgroundImage})`}}
+              />
+            })}
+          </div>
+        </div>
+      </div>
+      <div className={s.separatorWaveBottom}>
+        <img src={sectionSeparatorWave} alt="Section separator" style={{transform: 'rotate(0.5turn)'}}/>
+      </div>
+    </div>
+  );
 }
