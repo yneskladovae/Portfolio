@@ -40,7 +40,7 @@ export const Nav = () => {
         src={hamburgerIcon}
         alt="Menu"
       />
-      <ul>
+      <ul className={s.navItems}>
         {navLinks.map((link) => (
           <li key={link.id}>
             <a className={activeLink === link.id ? s.active : ''} href={`#${link.id}`}

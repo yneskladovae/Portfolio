@@ -8,16 +8,16 @@ import {Contacts} from "./components/Contacts/Contacts";
 import {Offer} from "./components/Offer/Offer";
 
 function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <Offer/>
-            <Contacts/>
-        </div>
-    );
+  return (
+    <div className="App">
+      <Header/>
+      <Main/>
+      <Skills/>
+      <Projects/>
+      <Offer/>
+      <Contacts/>
+    </div>
+  );
 }
 
 export default App;

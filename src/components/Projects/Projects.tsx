@@ -5,6 +5,7 @@ import {Project} from "./Project/Project";
 import {MyProjectsData} from '../../data/projects'
 import {sectionSeparatorWave,} from "../../utils/icons";
 import {CustomHeader} from "../../common/components/CustomHeader/CustomHeader";
+import {Reveal} from "../../common/components/Reveal/Reveal";
 
 export const Projects = () => {
   return (
@@ -19,13 +20,17 @@ export const Projects = () => {
           <CustomHeader header={'Projects'} subHeader={'Featured Projects'}/>
           <div className={s.projectsItems}>
             {MyProjectsData.map(project => {
-              return <Project
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                link={project.link}
-                style={{backgroundImage: `url(${project.backgroundImage})`}}
-              />
+              return (
+                <Reveal>
+                  <Project
+                    key={project.title}
+                    title={project.title}
+                    description={project.description}
+                    link={project.link}
+                    style={{backgroundImage: `url(${project.backgroundImage})`}}
+                  />
+                </Reveal>
+              )
             })}
           </div>
         </div>
