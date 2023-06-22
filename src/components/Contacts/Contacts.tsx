@@ -7,9 +7,9 @@ import {Reveal} from "../../common/components/Reveal/Reveal";
 
 export const Contacts = () => {
   return (
-    <div id='contacts' className={s.contactsBlock}>
+    <div className={s.contactsBlock}>
       <img className={s.contactsSeparator} src={footerWave} alt="Separator for contacts"/>
-      <div className={`${StyleContainer.container} \`${s.contactsContainer}`}>
+      <div id='contacts' className={`${StyleContainer.container} ${s.contactsContainer}`}>
         <div className={s.contactsWrap}>
           <div className={s.info}>
             <Reveal>
