@@ -45,26 +45,6 @@ export const Nav = () => {
   };
 
   return (
-    // <nav className={s.navContainer}>
-    //   <div className={divClassName}  onClick={handleButtonClick}>
-    //     <span></span>
-    //   </div>
-    //   {/*<img*/}
-    //   {/*  className={s.hamburger}*/}
-    //   {/*  src={hamburgerIcon}*/}
-    //   {/*  alt="Menu"*/}
-    //   {/*/>*/}
-    //   <ul className={navClassName}>
-    //     {navLinks.map((link) => (
-    //       <li key={link.id}>
-    //         <a className={activeLink === link.id ? s.active : ''} href={`#${link.id}`}
-    //            onClick={() => handleNavLinkClick(link.id)}>
-    //           {link.label}
-    //         </a>
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </nav>
     <>
       <nav className={navClassName} onBlur={handleBlur}>
         <ul>
@@ -82,7 +62,5 @@ export const Nav = () => {
         <span></span>
       </div>
     </>
-
-
   );
 };
