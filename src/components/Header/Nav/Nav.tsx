@@ -5,7 +5,7 @@ import {handleScroll} from "../../../utils/scrollUtils";
 export const Nav = () => {
   const [activeLink, setActiveLink] = useState<string>('');
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const divClassName = isOpen ? `${s.burger} ${s.active}` : s.burger;
+  const burgerClassName = isOpen ? `${s.burger} ${s.active}` : s.burger;
   const navClassName = isOpen ? `${s.nav} ${s.open}` : s.nav;
   const navLinks = [
     {id: 'main', label: 'Main'},
@@ -58,7 +58,7 @@ export const Nav = () => {
           ))}
         </ul>
       </nav>
-      <div className={divClassName} onClick={handleButtonClick}>
+      <div className={burgerClassName} onClick={handleButtonClick}>
         <span></span>
       </div>
     </>
