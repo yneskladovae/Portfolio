@@ -8,7 +8,9 @@ export const Offer = () => {
       <Reveal>
         <p className={s.description}>considering remote work options</p>
         <h2 className={s.header}>Let's get to work</h2>
-        <button className={s.btnOffer}>Hire me</button>
+        <button className={s.btnOffer}>
+          <a href="#contacts">Hire me</a>
+        </button>
       </Reveal>
     </div>
   );

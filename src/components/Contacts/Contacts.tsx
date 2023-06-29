@@ -47,7 +47,6 @@ export const Contacts = () => {
     reset();
   };
 
-
   return (
     <div className={s.contactsBlock}>
       <img className={s.contactsSeparator} src={footerWave} alt="Separator for contacts"/>
@@ -59,19 +58,19 @@ export const Contacts = () => {
               <div className={s.infoWrap}>
                 <ul className={s.links}>
                   <li>
-                    <a href="">
+                    <a href="https://github.com/yneskladovae">
                       <img src={gitHubIcon} alt="Icon"/>
                       GitHub
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/denispolunosik">
                       <img src={linkedInIcon} alt="Icon"/>
                       LinkedIn
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="mailto:denispolunosik@gmail.com">
                       <img src={emailIcon} alt="Icon"/>
                       denispolunosik@gmail.com
                     </a>

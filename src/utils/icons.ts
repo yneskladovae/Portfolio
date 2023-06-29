@@ -23,13 +23,12 @@ import githubDots from '../assets/svg/github-dots.svg'
 import cards from '../assets/images/cards.jpg'
 import social from '../assets/images/socialNetwork.jpg'
 import todolist from '../assets/images/todolist.png'
+import counter from '../assets/images/counter.jpg'
 // footer image
 import message from '../assets/svg/message.svg'
-
 // section separator img
 import sectionSeparatorWave from '../assets/svg/bg-wave.svg'
 import footerWave from '../assets/svg/footer-wave.svg'
-
 
 export {
     programmer,
@@ -49,6 +48,7 @@ export {
     cards,
     social,
     todolist,
+    counter,
     message,
     footerWave,
     sectionSeparatorWave,
